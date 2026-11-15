@@ -15,7 +15,7 @@ Two tables covering 29,763 client-periods (about 22,000 clients), 2023/01 to 202
 - loan level monthly recoveries for up to 24 months after the start of the court process;
 - 50 anonymized client features (transaction activity, account balances, payment history on other loans, digital channels, credit bureau, declared income, recent credit applications).
 
-The data is not included in this repository.
+The data is confidential and is not included in this repository.
 
 ## What made this harder than a standard regression
 
@@ -55,16 +55,9 @@ The notebook also covers sensitivity analysis (decision margin, per loan cost, t
 - All results are relative to "refer all" on a population the expert already approved. Nothing here says how the model compares with the expert on rejected clients.
 - Labels of the most recent cohorts are partly extrapolated. Final validation needs a prospective pilot (section 11).
 
-## Running it
+## Reproducibility
 
-```bash
-python -m venv .venv
-.venv\Scripts\activate          # macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-jupyter lab
-```
-
-The notebook expects three files in `data/raw/`: `loan_month_recovery.csv`, `Features.csv` and `feature_dictionary.csv`. Python 3.12 was used.
+The data is confidential and is not part of this repository, so the notebook cannot be re-run from here. All outputs are saved in the notebook, so the full analysis, tables and charts can be read directly on GitHub. `requirements.txt` lists the libraries that were used (Python 3.12).
 
 ## Notebook outline
 
